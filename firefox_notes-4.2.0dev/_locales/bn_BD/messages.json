@@ -1,0 +1,50 @@
+{
+  "welcomeTitle2": {
+    "message": "হ্যালো!"
+  },
+  "emptyPlaceHolder": {
+    "message": "টুকে রাখুন..."
+  },
+  "giveFeedback": {
+    "message": "আমাদেরকে আপনার প্রতিক্রিয়া জানাতে এখানে ক্লিক করুন"
+  },
+  "openingLogin": {
+    "message": "লগিন প্রস্তুত করা হচ্ছে..."
+  },
+  "forgetEmail": {
+    "message": "এই ইমেইল ভুলে যাও"
+  },
+  "syncNotes": {
+    "message": "আপনার নোটসমূহ সিঙ্ক করুন"
+  },
+  "syncProgress": {
+    "message": "সিঙ্ক প্রক্রিয়া পরিবর্তন..."
+  },
+  "disableSync": {
+    "message": "সিঙ্ক নিস্ক্রিয় করো"
+  },
+  "syncComplete": {
+    "message": "{date} তারিখে সিঙ্ক করা হয়েছে"
+  },
+  "fontSizeTitle": {
+    "message": "ফন্টের আকার"
+  },
+  "boldTitle": {
+    "message": "গাঢ়"
+  },
+  "italicTitle": {
+    "message": "তির্যক"
+  },
+  "strikethroughTitle": {
+    "message": "অবচ্ছেদন রেখা"
+  },
+  "numberedListTitle": {
+    "message": "সংখ্যায়িত তালিকা"
+  },
+  "bulletedListTitle": {
+    "message": "বুলেটযুক্ত তালিকা"
+  },
+  "textDirectionTitle": {
+    "message": "পাঠ্যের দিকবিন্যাস"
+  }
+}

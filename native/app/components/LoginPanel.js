@@ -36,9 +36,8 @@ class LoginPanel extends React.Component {
             { i18nGetMessage('welcomeTitle4') }
           </Text>
           <Text style={{ fontWeight: 'bold', fontSize: 16, paddingBottom: 30, textAlign: 'center', lineHeight: 22 }}>{ i18nGetMessage('welcomeHeadline') }</Text>
-          <Button loading={this.state.isLoading} raised onPress={this.onAuth.bind(this)} color={COLOR_NOTES_BLUE}
-            style={styles.btnSignin}><Text style={{ fontSize: 14 }}>{ i18nGetMessage('signIn') }</Text></Button>
-
+          <Button testID='signInButton' mode="contained" loading={this.state.isLoading} onPress={this.onAuth.bind(this)} color={COLOR_NOTES_BLUE}
+            style={styles.btnSignin}><Text testID={'signInButtonText'} style={{ fontSize: 14 }}>{ i18nGetMessage('signIn') }</Text></Button>
           <Text style={{ fontSize: 14, paddingTop: 25, textAlign: 'center', lineHeight: 18, paddingBottom: 10  }}>
             { i18nGetMessage('usageHint') }
           </Text>

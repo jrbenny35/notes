@@ -1,0 +1,140 @@
+{
+  "welcomeTitle3": {
+    "message": "Firefox नोट्स में आपका स्वागत है!"
+  },
+  "welcomeSubtitle": {
+    "message": "आपके ब्राउज़ करते समय नोट लेने के लिए एक सरल उपकरण."
+  },
+  "welcomeOpenNotes": {
+    "message": "नोट्स खोलने के लिए:"
+  },
+  "welcomeWindowsLinuxShortcut": {
+    "message": "विंडोज, लिनक्स पर: $SHORTCUT$",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "welcomeMacShortcut": {
+    "message": "मैक पर: $SHORTCUT$",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "welcomeAccessNotes": {
+    "message": "अपने नोट्स को किसी भी लैपटॉप या डेस्कटॉप कंप्यूटर से एक्सेस करने के लिए:"
+  },
+  "welcomeSyncInfo": {
+    "message": "अपने Firefox खाते में साइन इन करने के लिए $SYNC$ का चयन करें.",
+    "placeholders": {
+      "sync": {
+        "content": "$1"
+      }
+    }
+  },
+  "welcomeSuggestion": {
+    "message": "नोट्स में सुधार करने के लिए कोई सुझाव है?"
+  },
+  "welcomeGiveFeedback": {
+    "message": "नोट्स मेनू में $FEEDBACK$ चुनें.",
+    "placeholders": {
+      "feedback": {
+        "content": "$1"
+      }
+    }
+  },
+  "emptyPlaceHolder": {
+    "message": "नोट लें…"
+  },
+  "giveFeedback": {
+    "message": "हमें कुछ प्रतिक्रिया देने के लिए यहाँ क्लिक करें"
+  },
+  "openingLogin": {
+    "message": "लॉगिन खोला जा रहा है…"
+  },
+  "forgetEmail": {
+    "message": "यह ईमेल भूल जाए"
+  },
+  "disableSync": {
+    "message": "सिंक अक्षम करें"
+  },
+  "savingChanges": {
+    "message": "परिवर्तन सहेजे जा रहे हैं…"
+  },
+  "changesSaved": {
+    "message": "सभी परिवर्तन सहेजे गए"
+  },
+  "syncNotReady2": {
+    "message": "माफ़ कीजिये, सिंकिंग नोट अभी तैयार नहीं हैं. हम इसे त्वरित करने के लिए वोट के रूप में आपके क्लिक की गणना करेंगे."
+  },
+  "syncNotes": {
+    "message": "अपने नोट्स सिंक करें"
+  },
+  "syncProgress": {
+    "message": "परिवर्तन सिंक्रनाइज़ कर रहे हैं"
+  },
+  "syncComplete3": {
+    "message": "समकालिक $TIME$",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "syncToMail": {
+    "message": "$MAIL$ के साथ समकालीन",
+    "placeholders": {
+      "mail": {
+        "content": "$1"
+      }
+    }
+  },
+  "title1": {
+    "message": "शीर्षक 1"
+  },
+  "title2": {
+    "message": "शीर्षक 2"
+  },
+  "title3": {
+    "message": "शीर्षक 3"
+  },
+  "paragraph": {
+    "message": "मुख्य भाग"
+  },
+  "bodyText": {
+    "message": "मुख्य भाग अवतरण"
+  },
+  "fontSizeTitle": {
+    "message": "फ़ॉन्ट आकार"
+  },
+  "boldTitle": {
+    "message": "मोटे अक्षर"
+  },
+  "italicTitle": {
+    "message": "तिरछा"
+  },
+  "strikethroughTitle": {
+    "message": "काटना"
+  },
+  "numberedListTitle": {
+    "message": "क्रमांकित सूची"
+  },
+  "bulletedListTitle": {
+    "message": "बुलेट सूची"
+  },
+  "textDirectionTitle": {
+    "message": "पाठ की दिशा"
+  },
+  "themeLegend": {
+    "message": "विषयवस्तु"
+  },
+  "defaultThemeTitle": {
+    "message": "पूर्वःनिर्धारित"
+  },
+  "darkThemeTitle": {
+    "message": "गहरा"
+  }
+}

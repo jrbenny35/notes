@@ -10,6 +10,7 @@ import android.webkit.CookieManager;
 import android.webkit.WebStorage;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.webkit.ValueCallback;
 import android.widget.RelativeLayout;
 
 import org.mozilla.testpilot.notes.R;
@@ -35,7 +36,7 @@ public class FxaLoginActivity extends AppCompatActivity {
         webView.getSettings().setDomStorageEnabled(true);
         CookieManager.getInstance().setAcceptCookie(true);
         WebStorage.getInstance().deleteAllData();
-
+        WebView.setWebContentsDebuggingEnabled(true);
         final FxaLoginActivity act = this;
 
         final WebViewClient client = new WebViewClient() {
@@ -54,7 +55,30 @@ public class FxaLoginActivity extends AppCompatActivity {
                         act.finish();
                     }
                 }
+
                 super.onPageStarted(view, url, favicon);
+            }
+
+            @Override
+            public void onPageFinished(WebView view, String url) {
+
+              final String fillEmailJs = "javascript: setInterval(" +
+                    "function() {document.getElementsByName('email')[0].value = 'bforehandtest@restmail.net';" +
+                    "document.getElementById('submit-btn').click()}, 5000)";
+              final String fillPasswordJs = "javascript: setInterval(" +
+                  "function() {document.getElementById('password').value = 'thisisatest123';" +
+                  "document.getElementById('submit-btn').click()}, 5000)";
+              final String continueJs = "javascript: document.getElementsByClassName('btn-continue')[0].click()";
+
+              view.evaluateJavascript(fillEmailJs, new ValueCallback<String>() {
+                @Override
+                public void onReceiveValue(String s) {}});
+              view.evaluateJavascript(fillPasswordJs, new ValueCallback<String>() {
+                @Override
+                public void onReceiveValue(String s) {}});
+              view.evaluateJavascript(continueJs, new ValueCallback<String>() {
+                @Override
+                public void onReceiveValue(String s) {}});
             }
         };
 
@@ -62,7 +86,10 @@ public class FxaLoginActivity extends AppCompatActivity {
 
         this.mWebView = webView;
         webView.loadUrl(authUrl);
-    }
+
+
+        }
+
 
     @Override
     protected void onPause() {

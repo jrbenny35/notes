@@ -1,0 +1,105 @@
+{
+  "welcomeTitle3": {
+    "message": "Firefox Notes에 오신 것을 환영합니다!"
+  },
+  "emptyPlaceHolder": {
+    "message": "노트 쓰기…"
+  },
+  "giveFeedback": {
+    "message": "클릭해서 의견을 보내주세요"
+  },
+  "feedback": {
+    "message": "의견 보내기"
+  },
+  "cancelLogin": {
+    "message": "로그인 취소"
+  },
+  "removeAccount": {
+    "message": "계정 삭제"
+  },
+  "openingLogin": {
+    "message": "로그인 시작…"
+  },
+  "pleaseLogin": {
+    "message": "계정 확인…"
+  },
+  "forgetEmail": {
+    "message": "이 이메일 없애기"
+  },
+  "disableSync": {
+    "message": "동기화 사용 안함"
+  },
+  "reconnectSync": {
+    "message": "동기화에 다시 연결"
+  },
+  "syncError": {
+    "message": "동기화 오류"
+  },
+  "savingChanges": {
+    "message": "변경 사항 저장…"
+  },
+  "changesSaved": {
+    "message": "모든 변경 사항 저장됨"
+  },
+  "syncNotReady2": {
+    "message": "죄송합니다. 노트 동기화가 아직 충분히 준비되지 않았습니다. 클릭해 주신 만큼 더 빨리 노력하겠습니다!"
+  },
+  "syncReady": {
+    "message": "동기화가 완성되었습니다! 필요한 노트를 받을 수 있게 아래에서 활성화 해 주세요."
+  },
+  "syncNotes": {
+    "message": "노트 동기화"
+  },
+  "syncProgress": {
+    "message": "변경 사항 동기화중…"
+  },
+  "savedComplete2": {
+    "message": "$TIME$에 저장",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "syncComplete2": {
+    "message": "$TIME$에 동기화",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "mergeWarning": {
+    "message": "**** 이 컴퓨터에서: ****"
+  },
+  "fontSizeTitle": {
+    "message": "글자 크기"
+  },
+  "boldTitle": {
+    "message": "굵게"
+  },
+  "italicTitle": {
+    "message": "기울임"
+  },
+  "strikethroughTitle": {
+    "message": "취소선"
+  },
+  "numberedListTitle": {
+    "message": "번호 목록"
+  },
+  "bulletedListTitle": {
+    "message": "번호없는 목록"
+  },
+  "textDirectionTitle": {
+    "message": "텍스트 방향"
+  },
+  "themeLegend": {
+    "message": "테마"
+  },
+  "defaultThemeTitle": {
+    "message": "기본"
+  },
+  "darkThemeTitle": {
+    "message": "어두움"
+  }
+}

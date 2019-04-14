@@ -1,0 +1,6 @@
+
+--recursive
+--timeout 120000
+--retries 1
+--reporter=list
+--require babel-register

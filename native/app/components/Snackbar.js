@@ -9,9 +9,9 @@ import {
   TouchableWithoutFeedback,
 } from 'react-native';
 
-import withTheme  from 'react-native-paper/src/core/withTheme';
-import { white } from 'react-native-paper/src/styles/colors';
-import type { Theme } from 'react-native-paper/src/types';
+import { withTheme }  from 'react-native-paper';
+import { Colors } from 'react-native-paper';
+import { type Theme }from 'react-native-paper';
 
 type Props = {
   /**
@@ -285,7 +285,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   content: {
-    color: white,
+    color: Colors.white,
     marginLeft: 24,
     marginVertical: 14,
     flexWrap: 'wrap',

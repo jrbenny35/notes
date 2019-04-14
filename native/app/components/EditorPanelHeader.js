@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { StyleSheet, View, Dimensions, StatusBar, Animated } from 'react-native';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
-import { Toolbar, ToolbarContent, ToolbarAction } from 'react-native-paper';
+import { Appbar } from 'react-native-paper';
 import { COLOR_APP_BAR, COLOR_NOTES_BLUE, COLOR_DARK_WARNING } from '../utils/constants';
 import MoreMenu from './MoreMenu';
 import browser from '../browser';
@@ -95,7 +95,7 @@ class EditorPanelHeader extends Component {
   render() {
     const { navigation } = this.props;
     return (
-      <Toolbar style={ styles.toolbar }>
+      <Appbar.Header style={ styles.toolbar }>
         <MaterialIcons name="chevron-left"
            style={ styles.backButton }
            size={30}
@@ -108,7 +108,7 @@ class EditorPanelHeader extends Component {
               outputRange: [1, 0]
             })
           }]}>
-            <ToolbarContent
+            <Appbar.Content
               title={ this.state.content1 }
               style={{ justifyContent: 'center' }}
               titleStyle={{ fontSize: 14, textAlign: 'center', color: this.state.color1 }}
@@ -120,7 +120,7 @@ class EditorPanelHeader extends Component {
               outputRange: [0, 1]
             })
           }]}>
-            <ToolbarContent
+            <Appbar.Content
               title={ this.state.content2 }
               style={{ justifyContent: 'center' }}
               titleStyle={{ fontSize: 14, textAlign: 'center', color: this.state.color2 }}
@@ -128,7 +128,7 @@ class EditorPanelHeader extends Component {
           </Animated.View>
         </View>
         <MoreMenu navigation={ navigation } />
-      </Toolbar>
+      </Appbar.Header>
     );
   }
 }

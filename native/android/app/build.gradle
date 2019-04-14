@@ -103,6 +103,10 @@ android {
         targetSdkVersion 26
         versionCode 8
         versionName "1.2android"
+        multiDexEnabled true
+        testBuildType System.getProperty('testBuildType', 'debug')
+        missingDimensionStrategy "minReactNative", "minReactNative46"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         ndk {
             abiFilters "armeabi-v7a", "x86"
         }
@@ -150,19 +154,29 @@ android {
     }
 }
 
+configurations.all {
+  resolutionStrategy {
+    force 'com.android.support:support-annotations:26.1.0'
+  }
+}
+
 dependencies {
-    compile project(':react-native-sqlite-2')
-    compile project(':react-native-google-analytics-bridge')
-    compile project(':react-native-sentry')
-    compile project(':react-native-vector-icons')
-    compile project(':react-native-keychain')
-    compile project(':react-native-randombytes')
-    compile project(':react-native-app-auth')
-    compile fileTree(dir: "libs", include: ["*.jar"])
-    // compile "com.android.support:appcompat-v7:23.0.1"
-    compile "com.android.support:appcompat-v7:26.1.0"
-    compile "com.facebook.react:react-native:+"  // From node_modules
-    compile "org.mozilla.components:service-firefox-accounts:0.29.0"
+    implementation project(':react-native-sqlite-2')
+    implementation project(':react-native-google-analytics-bridge')
+    implementation project(':react-native-sentry')
+    implementation project(':react-native-vector-icons')
+    implementation project(':react-native-keychain')
+    implementation project(':react-native-randombytes')
+    implementation project(':react-native-app-auth')
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    // implementation "com.android.support:appcompat-v7:23.0.1"
+    implementation "com.android.support:appcompat-v7:26.1.0"
+    implementation "com.facebook.react:react-native:+"  // From node_modules
+    implementation "org.mozilla.components:service-firefox-accounts:0.29.0"
+    androidTestImplementation(project(path: ":detox"))
+    androidTestImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test:rules:1.0.1'
 }
 
 repositories {
@@ -170,6 +184,7 @@ repositories {
         url "https://maven.mozilla.org/maven2"
     }
     mavenLocal()
+    google()
 }
 
 // Run this once to be able to run the application with BUCK
@@ -177,6 +192,16 @@ repositories {
 task copyDownloadableDepsToLibs(type: Copy) {
     from configurations.compile
     into 'libs'
+}
+
+project(':react-native-app-auth') {
+    afterEvaluate {
+        configurations.all {
+            resolutionStrategy {
+                force 'com.android.support:support-v4:27.1.1'
+            }
+        }
+    }
 }
 
 project.afterEvaluate {

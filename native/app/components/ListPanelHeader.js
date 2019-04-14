@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { StyleSheet, View, Dimensions, StatusBar } from 'react-native';
 import { resetSelect, deleteNotes } from "../actions";
 
-import { Toolbar, ToolbarContent, ToolbarAction } from 'react-native-paper';
+import { Appbar } from 'react-native-paper';
 import { COLOR_APP_BAR, COLOR_NOTES_BLUE, COLOR_DARK_TEXT } from '../utils/constants';
 import browser from '../browser';
 class ListPanelHeader extends Component {
@@ -32,40 +32,41 @@ class ListPanelHeader extends Component {
     const { navigation } = this.props;
     if (this.props.state.sync.selected) {
       return (
-        <Toolbar style={styles.toolbarSelected}>
-          <ToolbarAction
+        <Appbar.Header style={styles.toolbarSelected}>
+          <Appbar.Action
             size={20}
             style={{ paddingTop: 4 }}
             color={COLOR_DARK_TEXT}
             icon='clear'
             onPress={() => this._resetSelection()} />
-          <ToolbarContent
+          <Appbar.Content
             style={{ paddingLeft: 0,  }}
             titleStyle={{ fontSize: 18, color: COLOR_DARK_TEXT }}
             title={ browser.i18n.getMessage('noteListSelection') } />
-          <ToolbarAction
+          <Appbar.Action
             size={20}
             style={{ paddingTop: 4 }}
             color={COLOR_DARK_TEXT}
             icon='delete'
             onPress={() => this._deleteSelection()} />
-        </Toolbar>
+        </Appbar.Header>
       );
     }
 
     return (
-      <Toolbar style={styles.toolbar}>
-        <ToolbarAction
+      <Appbar.Header style={styles.toolbar}>
+        <Appbar.Action
           size={20}
           style={{ paddingTop: 4 }}
           color={COLOR_NOTES_BLUE}
           icon='menu'
           onPress={() => navigation.toggleDrawer()} />
-        <ToolbarContent
+        <Appbar.Content
           style={{ paddingLeft: 0, paddingHorizontal: 0  }}
           titleStyle={{ fontSize: 18, color: COLOR_NOTES_BLUE }}
-          title={ browser.i18n.getMessage('welcomeTitle4') } />
-      </Toolbar>
+          title={ browser.i18n.getMessage('welcomeTitle4') }
+          testID='listHeader' />
+      </Appbar.Header>
     );
   }
 }

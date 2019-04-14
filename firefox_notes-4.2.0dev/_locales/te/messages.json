@@ -1,0 +1,90 @@
+{
+  "welcomeTitle3": {
+    "message": "Firefox Notesకి స్వాగతం!"
+  },
+  "welcomeWindowsLinuxShortcut": {
+    "message": "విండోస్, లినక్స్‌లో: $SHORTCUT$",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "welcomeMacShortcut": {
+    "message": "మ్యాక్‌లో: $SHORTCUT$",
+    "placeholders": {
+      "shortcut": {
+        "content": "$1"
+      }
+    }
+  },
+  "emptyPlaceHolder": {
+    "message": "గమనికను తీసుకోండి…"
+  },
+  "giveFeedback": {
+    "message": "మాకు అభిప్రాయాన్ని ఇవ్వడానికి ఇక్కడ నొక్కండి"
+  },
+  "feedback": {
+    "message": "ప్రతిస్పందన తెలియజేయండి"
+  },
+  "removeAccount": {
+    "message": "ఖాతాను తొలగించు"
+  },
+  "openingLogin": {
+    "message": "లాగిన్ తెరవడం…"
+  },
+  "forgetEmail": {
+    "message": "ఈ ఈమెయిలును మర్చిపో"
+  },
+  "disableSync": {
+    "message": "సమకాలీకరించడాన్ని అచేతనంచేయి"
+  },
+  "savingChanges": {
+    "message": "మార్పులను భద్రపరచు…"
+  },
+  "changesSaved": {
+    "message": "అన్ని మార్పులు భద్రపరచబడ్డాయి"
+  },
+  "syncNotReady2": {
+    "message": "క్షమించండి, గమనికలను సమకాలీకరించడం సిద్ధంగా లేదు. మీ క్లిక్కుని ఓటని మేము లెక్కించాము!"
+  },
+  "syncNotes": {
+    "message": "మీ గమనికలను సమకాలీకరించండి"
+  },
+  "syncProgress": {
+    "message": "మార్పులు సమకాలీకరించబడుతున్నాయి…"
+  },
+  "fontSizeTitle": {
+    "message": "ఫాంట్ పరిమాణం"
+  },
+  "boldTitle": {
+    "message": "బొద్దు"
+  },
+  "italicTitle": {
+    "message": "వాలు"
+  },
+  "strikethroughTitle": {
+    "message": "కొట్టివేత"
+  },
+  "numberedListTitle": {
+    "message": "సంఖ్యా జాబితా"
+  },
+  "bulletedListTitle": {
+    "message": "తూటాల జాబితా"
+  },
+  "textDirectionTitle": {
+    "message": "పాఠ్యపు దిశ"
+  },
+  "themeLegend": {
+    "message": "అలంకారం"
+  },
+  "defaultThemeTitle": {
+    "message": "అప్రమేయం"
+  },
+  "darkThemeTitle": {
+    "message": "ముదురు"
+  },
+  "sendToNotes": {
+    "message": "Notesకు జోడించండి"
+  }
+}
